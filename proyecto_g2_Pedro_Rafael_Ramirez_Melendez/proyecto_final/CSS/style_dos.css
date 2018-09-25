@@ -1,0 +1,176 @@
+
+/*facebook y G-mail*/
+.red{
+	position: fixed;
+	top: 200px;
+	z-index: 100;
+    left: 0;
+    margin-bottom: 5px;
+}
+#facebook a{
+	background: #3b5998;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+
+    transition: all .4s ease;
+   
+}
+#facebook a:hover{
+	background:#3b5998;
+    padding: 10px 50px;
+    
+}
+#correo a{
+	background: #e95950;
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+	
+	transition: all .4s ease;
+}
+#correo a:hover{
+	background: #e95950;
+	padding: 10px 50px;
+}
+
+
+/*efecto en imagenes*/
+.imagenes{
+    margin-left: 2.9%;
+}
+
+img.zoom {
+	width:80%;
+	height: 50%; 
+	padding-left: 10% ;
+
+
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+ 
+.transition {
+    -webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/*fin del efecto delas imagenes*/
+/*videos*/
+.video{
+    margin-left: 18%;  
+}
+
+/*slider*/
+.tamaño{
+	padding-bottom: 10%;
+}
+.slider{
+	margin-bottom: 15%;
+}
+.slideshow2{
+	height:300px;
+	width: 100%;
+	position: relative;	
+}
+.slider2 li, ul{
+/*	height:50px;*/
+	padding-top: 0;
+	padding-bottom: 0;
+	width: 100%;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+.slider2 li{
+	overflow: hidden;
+}
+.slider2 li img{
+	width: 100%;
+}
+.slider2 .caption2{
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	top: 0;
+	left: 0;
+	padding: 5px 5px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+	color: #fff;
+	z-index: 1;
+}
+
+.slider2 .caption2 h1{
+	font-size: 50px;
+}
+.slider2 .caption2 p{
+	margin-top: 10px;
+	font-size: 20px;
+}
+.pagination2{
+	position: absolute;
+	top: 102%;
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+}
+.pagination2 li{
+	font-size: 20px;
+	/*margin: 2px 5px;*/
+	color: #858585;
+	cursor: pointer;
+}
+.left2, .right2{
+	margin-left: 2%;
+	position: absolute;
+	top: 0;
+	height: 125%;
+
+	display: flex;
+	align-items: center;
+
+	color: #fff;
+	font-size: 35px;
+	cursor: pointer;
+	z-index: 2;
+}
+.left2{
+	left: 10px;
+}
+.right2{
+	right: 10px;
+}
+@media screen and (max-width: 500px){
+	.slider2 .caption2 p{
+		display: none;
+	}
+	.slider2 .caption2 h1{
+		font-size: 35px;
+	}
+	.left2, .right2{
+		font-size: 30px;
+	}
+	.slider2 li img{
+		width: 600px;
+	}
+	.pagination2{
+		display: none;
+	}
+}
+/*iconos de pie de contacto*/
+.iconos-contacto:first{
+	padding-left: 40%;
+}
+.iconos-contacto{
+	color: white;
+	margin-right:2%; 
+}
